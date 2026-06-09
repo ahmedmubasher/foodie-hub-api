@@ -1,0 +1,818 @@
+ 
+{
+    "apple_pie": {
+        "healthy": "Low - High in sugar and saturated fats",
+        "calories": "237 kcal / 100g",
+        "protein": "1.9g",
+        "carbs_g": "34g",
+        "fat_g": "11g",
+        "warning": "Not suitable for diabetics or those looking to lose weight"
+    },
+    "baby_back_ribs": {
+        "healthy": "Medium - High protein but rich in saturated fats",
+        "calories": "282 kcal / 100g",
+        "protein": "17g",
+        "carbs_g": "0-5g",
+        "fat_g": "23g",
+        "warning": "High in sodium and fats; caution for heart patients"
+    },
+    "baklava": {
+        "healthy": "Very Low - Very high calories from sugar and fats",
+        "calories": "428 kcal / 100g",
+        "protein": "6g",
+        "carbs_g": "50g",
+        "fat_g": "22g",
+        "warning": "Dangerous for diabetics; contains nuts (allergy risk)"
+    },
+    "beef_carpaccio": {
+        "healthy": "High - Pure protein and low calories",
+        "calories": "120 kcal / 100g",
+        "protein": "20g",
+        "carbs_g": "1g",
+        "fat_g": "4g",
+        "warning": "Raw meat; not recommended for pregnant women or immunocompromised individuals"
+    },
+    "beef_tartare": {
+        "healthy": "High - Excellent protein source",
+        "calories": "165 kcal / 100g",
+        "protein": "19g",
+        "carbs_g": "1-2g",
+        "fat_g": "10g",
+        "warning": "Raw meat; risk of bacterial contamination if not extremely fresh"
+    },
+    "beet_salad": {
+        "healthy": "Very High - Packed with fiber and vitamins",
+        "calories": "43 kcal / 100g",
+        "protein": "1.6g",
+        "carbs_g": "10g",
+        "fat_g": "0.2g",
+        "warning": "May affect kidney stone patients (high in oxalates)"
+    },
+    "beignets": {
+        "healthy": "Low - Fried dough and powdered sugar",
+        "calories": "350 kcal / 100g",
+        "protein": "5g",
+        "carbs_g": "45g",
+        "fat_g": "15g",
+        "warning": "High in carbs and sugar; spikes blood sugar rapidly"
+    },
+    "bibimbap": {
+        "healthy": "High - Balanced meal (vegetables, protein, rice)",
+        "calories": "145 kcal / 100g",
+        "protein": "6g",
+        "carbs_g": "18g",
+        "fat_g": "5g",
+        "warning": "Watch the amount of added sauce (soy) due to high salt content"
+    },
+    "bread_pudding": {
+        "healthy": "Low - Dessert rich in carbohydrates and fats",
+        "calories": "250 kcal / 100g",
+        "protein": "5g",
+        "carbs_g": "35g",
+        "fat_g": "10g",
+        "warning": "High in gluten and sugar"
+    },
+    "breakfast_burrito": {
+        "healthy": "Medium - Filling and high in protein",
+        "calories": "215 kcal / 100g",
+        "protein": "11g",
+        "carbs_g": "25g",
+        "fat_g": "9g",
+        "warning": "High in calories and sodium depending on ingredients (sausage/cheese)"
+    },
+    "bruschetta": {
+        "healthy": "High - Based on olive oil and tomatoes",
+        "calories": "180 kcal / 100g",
+        "protein": "5g",
+        "carbs_g": "22g",
+        "fat_g": "8g",
+        "warning": "High in carbohydrates (refined white bread)"
+    },
+    "caesar_salad": {
+        "healthy": "Medium - Excellent greens but the dressing is very fatty",
+        "calories": "190 kcal / 100g",
+        "protein": "7g",
+        "carbs_g": "8g",
+        "fat_g": "14g",
+        "warning": "Dressing is high in calories, fats, and sodium"
+    },
+    "cannoli": {
+        "healthy": "Low - Fried pastry filled with sweetened cream",
+        "calories": "250 kcal / 100g",
+        "protein": "5g",
+        "carbs_g": "30g",
+        "fat_g": "12g",
+        "warning": "High in sugar and saturated fats"
+    },
+    "caprese_salad": {
+        "healthy": "High - Healthy fats from olive oil and protein from mozzarella",
+        "calories": "170 kcal / 100g",
+        "protein": "8g",
+        "carbs_g": "5g",
+        "fat_g": "13g",
+        "warning": "Monitor cheese intake for those with high cholesterol"
+    },
+    "carrot_cake": {
+        "healthy": "Low - Despite the carrots, it is loaded with oil and sugar",
+        "calories": "415 kcal / 100g",
+        "protein": "4g",
+        "carbs_g": "50g",
+        "fat_g": "22g",
+        "warning": "Extremely high in calories"
+    },
+    "ceviche": {
+        "healthy": "Very High - Lean protein and almost zero fat",
+        "calories": "98 kcal / 100g",
+        "protein": "15g",
+        "carbs_g": "4g",
+        "fat_g": "1g",
+        "warning": "Raw fish; risk for pregnant women and immunocompromised individuals"
+    },
+    "cheesecake": {
+        "healthy": "Low - High in calories and saturated fats",
+        "calories": "321 kcal / 100g",
+        "protein": "5.5g",
+        "carbs_g": "25g",
+        "fat_g": "22g",
+        "warning": "Not suitable for diabetics or those with high cholesterol"
+},
+
+    "cheese_plate": {
+        "healthy": "Medium - Rich in calcium and protein but very high in fat",
+        "calories": "350 kcal / 100g",
+        "protein": "21g",
+        "carbs_g": "2g",
+        "fat_g": "29g",
+        "warning": "High in sodium and saturated fats; caution for hypertensive patients"
+    },
+    "chicken_curry": {
+        "healthy": "Medium - Depends on the amount of oil or cream added",
+        "calories": "130 kcal / 100g",
+        "protein": "12g",
+        "carbs_g": "8g",
+        "fat_g": "7g",
+        "warning": "May be high in sodium and spicy spices"
+    },
+    "chicken_quesadilla": {
+        "healthy": "Medium - A mix of protein and carbohydrates",
+        "calories": "260 kcal / 100g",
+        "protein": "14g",
+        "carbs_g": "22g",
+        "fat_g": "13g",
+        "warning": "High in calories due to cheese and white flour tortillas"
+    },
+    "chicken_wings": {
+        "healthy": "Low - Fried and often coated in fatty sauces",
+        "calories": "290 kcal / 100g",
+        "protein": "18g",
+        "carbs_g": "8g",
+        "fat_g": "19g",
+        "warning": "Very high in trans fats and sodium"
+    },
+    "chocolate_cake": {
+        "healthy": "Low - Loaded with sugars and added fats",
+        "calories": "370 kcal / 100g",
+        "protein": "4g",
+        "carbs_g": "50g",
+        "fat_g": "18g",
+        "warning": "Causes a rapid spike in blood sugar levels"
+    },
+    "chocolate_mousse": {
+        "healthy": "Low - Rich in cream and sugar",
+        "calories": "225 kcal / 100g",
+        "protein": "3g",
+        "carbs_g": "20g",
+        "fat_g": "15g",
+        "warning": "High in calories and saturated fats"
+    },
+    "churros": {
+        "healthy": "Low - Fried dough coated in sugar",
+        "calories": "447 kcal / 100g",
+        "protein": "4.5g",
+        "carbs_g": "55g",
+        "fat_g": "22g",
+        "warning": "Empty calories and unhealthy fats"
+    },
+    "clam_chowder": {
+        "healthy": "Medium - Rich in minerals but very creamy",
+        "calories": "95 kcal / 100g",
+        "protein": "5g",
+        "carbs_g": "9g",
+        "fat_g": "4g",
+        "warning": "Contains heavy cream and high sodium; shellfish allergy risk"
+    },
+    "club_sandwich": {
+        "healthy": "Medium - Complete meal, but bread and mayo increase calories",
+        "calories": "220 kcal / 100g",
+        "protein": "11g",
+        "carbs_g": "20g",
+        "fat_g": "10g",
+        "warning": "May contain processed meats (linked to heart disease)"
+    },
+    "crab_cakes": {
+        "healthy": "Medium - Seafood protein but typically fried",
+        "calories": "210 kcal / 100g",
+        "protein": "15g",
+        "carbs_g": "12g",
+        "fat_g": "12g",
+        "warning": "Shellfish allergy warning and high added fats"
+    },
+    "creme_brulee": {
+        "healthy": "Low - Very high in fat and sugar",
+        "calories": "250 kcal / 100g",
+        "protein": "3g",
+        "carbs_g": "25g",
+        "fat_g": "16g",
+        "warning": "Calorie bomb from sugar and heavy cream"
+    },
+    "croque_madame": {
+        "healthy": "Low - Very heavy (butter, bechamel, and cheese)",
+        "calories": "270 kcal / 100g",
+        "protein": "13g",
+        "carbs_g": "18g",
+        "fat_g": "16g",
+        "warning": "Very high in cholesterol and saturated fats"
+    },
+    "cup_cakes": {
+        "healthy": "Low - High sugar and refined white flour",
+        "calories": "300 kcal / 100g",
+        "protein": "3g",
+        "carbs_g": "45g",
+        "fat_g": "12g",
+        "warning": "Lacks fiber and promotes rapid weight gain"
+    },
+    "deviled_eggs": {
+        "healthy": "Medium - High protein but mayo adds significant fat",
+        "calories": "180 kcal / 100g",
+        "protein": "10g",
+        "carbs_g": "2g",
+        "fat_g": "15g",
+        "warning": "Watch the mayo content (high cholesterol)"
+    },
+    "donuts": {
+        "healthy": "Very Low - Deep-fried with sugar and chocolate",
+        "calories": "452 kcal / 100g",
+        "protein": "4.9g",
+        "carbs_g": "51g",
+        "fat_g": "25g",
+        "warning": "Rich in trans fats which harm arterial health"
+    },
+    "dumplings": {
+        "healthy": "Medium - Depends on filling (steamed is better than fried)",
+        "calories": "175 kcal / 100g",
+        "protein": "8g",
+        "carbs_g": "22g",
+        "fat_g": "6g",
+        "warning": "Watch out for high sodium in the dipping soy sauce"
+    },
+    "edamame": {
+        "healthy": "Very High - Excellent plant-based protein and fiber",
+        "calories": "122 kcal / 100g",
+        "protein": "11g",
+        "carbs_g": "10g",
+        "fat_g": "5g",
+        "warning": "Safe unless there is a soy allergy"
+    },
+    "eggs_benedict": {
+        "healthy": "Low to Medium - Due to the fatty hollandaise sauce",
+        "calories": "230 kcal / 100g",
+        "protein": "11g",
+        "carbs_g": "15g",
+        "fat_g": "15g",
+        "warning": "Very high in fat, salt, and cholesterol"
+    },
+    "escargots": {
+        "healthy": "High - Excellent protein and low fat (without butter)",
+        "calories": "90 kcal / 100g",
+        "protein": "16g",
+        "carbs_g": "2g",
+        "fat_g": "1.5g",
+        "warning": "Often served with heavy butter, increasing calories and saturated fats"
+    },
+    "falafel": {
+        "healthy": "Medium - Good source of plant-based protein but deep-fried",
+        "calories": "333 kcal / 100g",
+        "protein": "13g",
+        "carbs_g": "32g",
+        "fat_g": "18g",
+        "warning": "Not ideal for heart patients due to frying; high in sodium"
+    },
+    "filet_mignon": {
+        "healthy": "High - One of the leanest and most protein-rich red meats",
+        "calories": "250 kcal / 100g",
+        "protein": "26g",
+        "carbs_g": "0g",
+        "fat_g": "16g",
+        "warning": "Consume in moderation for gout or high cholesterol patients"
+    },
+    "fish_and_chips": {
+        "healthy": "Low - Primarily a deep-fried dish high in carbohydrates",
+        "calories": "230 kcal / 100g",
+        "protein": "15g",
+        "carbs_g": "22g",
+        "fat_g": "11g",
+        "warning": "Contains high levels of trans fats and refined carbs"
+    },
+    "foie_gras": {
+        "healthy": "Very Low - Extremely rich in saturated fats and cholesterol",
+        "calories": "462 kcal / 100g",
+        "protein": "8g",
+        "carbs_g": "4g",
+        "fat_g": "44g",
+        "warning": "High risk for heart and arterial health"
+    },
+    "french_fries": {
+        "healthy": "Low - Fried starches lacking significant fiber",
+        "calories": "312 kcal / 100g",
+        "protein": "3.4g",
+        "carbs_g": "41g",
+        "fat_g": "15g",
+        "warning": "Linked to weight gain and heart disease due to hydrogenated oils"
+    },
+    "french_onion_soup": {
+        "healthy": "Medium - Onions are beneficial, but cheese and bread increase calories",
+        "calories": "95 kcal / 100g",
+        "protein": "4.5g",
+        "carbs_g": "10g",
+        "fat_g": "4g",
+        "warning": "Very high in sodium (salt)"
+    },
+    "french_toast": {
+        "healthy": "Low to Medium - High in carbohydrates and sugars",
+        "calories": "229 kcal / 100g",
+        "protein": "5g",
+        "carbs_g": "30g",
+        "fat_g": "10g",
+        "warning": "Spikes blood sugar quickly; whole wheat bread is preferred"
+    },
+    "fried_calamari": {
+        "healthy": "Low to Medium - Seafood protein but the outer layer is deep-fried",
+        "calories": "175 kcal / 100g",
+        "protein": "15g",
+        "carbs_g": "12g",
+        "fat_g": "8g",
+        "warning": "High in cholesterol and fat due to heavy frying"
+    },
+    "fried_rice": {
+        "healthy": "Medium - Depends on the amount of oil and added ingredients",
+        "calories": "163 kcal / 100g",
+        "protein": "4g",
+        "carbs_g": "25g",
+        "fat_g": "5g",
+        "warning": "High in carbs and sodium (due to soy sauce)"
+    },
+    "frozen_yogurt": {
+        "healthy": "Medium - Lighter alternative to ice cream but rich in sugar",
+        "calories": "159 kcal / 100g",
+        "protein": "3g",
+        "carbs_g": "28g",
+        "fat_g": "4g",
+        "warning": "Contains many added sugars that may mislead dieters"
+    },
+    "garlic_bread": {
+        "healthy": "Low - High in carbs and saturated fats (butter)",
+        "calories": "350 kcal / 100g",
+        "protein": "8g",
+        "carbs_g": "42g",
+        "fat_g": "16g",
+        "warning": "Digests quickly and raises blood sugar; calorie-dense"
+    },
+    "gnocchi": {
+        "healthy": "Medium - Potato-based dough high in carbohydrates",
+        "calories": "130 kcal / 100g",
+        "protein": "3g",
+        "carbs_g": "25g",
+        "fat_g": "1g",
+        "warning": "High glycemic index (raises blood sugar)"
+    },
+    "greek_salad": {
+        "healthy": "Very High - Fresh vegetables and healthy fats (olive oil)",
+        "calories": "100 kcal / 100g",
+        "protein": "2.2g",
+        "carbs_g": "5g",
+        "fat_g": "8g",
+        "warning": "Watch feta cheese and olive portions for hypertensive patients (salt)"
+    },
+    "grilled_cheese_sandwich": {
+        "healthy": "Low to Medium - Fatty and high in carbohydrates",
+        "calories": "320 kcal / 100g",
+        "protein": "10g",
+        "carbs_g": "30g",
+        "fat_g": "18g",
+        "warning": "Rich in saturated fats and sodium"
+    },
+    "grilled_salmon": {
+        "healthy": "Very High - Top-tier source of Omega-3 and protein",
+        "calories": "208 kcal / 100g",
+        "protein": "20g",
+        "carbs_g": "0g",
+        "fat_g": "13g",
+        "warning": "One of the best meals for heart and brain health"
+    },
+    "guacamole": {
+        "healthy": "High - Healthy unsaturated fats very beneficial for the heart",
+        "calories": "160 kcal / 100g",
+        "protein": "2g",
+        "carbs_g": "9g",
+        "fat_g": "15g",
+        "warning": "Healthy but calorie-dense; should be eaten in moderation"
+    },
+    "gyoza": {
+        "healthy": "Medium - Steamed is preferred over fried",
+        "calories": "200 kcal / 100g",
+        "protein": "6g",
+        "carbs_g": "22g",
+        "fat_g": "9g",
+        "warning": "Contains high sodium in the dough and accompanying sauce"
+    },
+    "hamburger": {
+        "healthy": "Medium to Low - Depends on meat quality and toppings",
+        "calories": "250 kcal / 100g",
+        "protein": "13g",
+        "carbs_g": "22g",
+        "fat_g": "12g",
+        "warning": "Fast food versions contain dangerous trans fats and sodium"
+    },
+    "hot_and_sour_soup": {
+        "healthy": "High - Low calorie and filling",
+        "calories": "41 kcal / 100g",
+        "protein": "2g",
+        "carbs_g": "5g",
+        "fat_g": "1g",
+        "warning": "Can be very high in salt (sodium)"
+
+    },
+
+    "hot_dog": {
+        "healthy": "Very Low - Processed meat filled with additives",
+        "calories": "290 kcal / 100g",
+        "protein": "10g",
+        "carbs_g": "12g",
+        "fat_g": "24g",
+        "warning": "Linked to heart disease and cancer due to nitrates and sodium"
+    },
+    "huevos_rancheros": {
+        "healthy": "Medium - Complete meal (eggs, legumes, vegetables)",
+        "calories": "180 kcal / 100g",
+        "protein": "9g",
+        "carbs_g": "15g",
+        "fat_g": "9g",
+        "warning": "Avoid over-frying the tortilla to reduce calorie count"
+    },
+    "hummus": {
+        "healthy": "Very High - Plant-based protein and healthy fats (tahini)",
+        "calories": "166 kcal / 100g",
+        "protein": "8g",
+        "carbs_g": "14g",
+        "fat_g": "10g",
+        "warning": "Very healthy but calorie-dense; stick to recommended portions"
+    },
+    "ice_cream": {
+        "healthy": "Low - High sugar and saturated fats",
+        "calories": "207 kcal / 100g",
+        "protein": "3.5g",
+        "carbs_g": "24g",
+        "fat_g": "11g",
+        "warning": "Causes weight gain and fluctuations in sugar levels"
+    },
+    "lasagna": {
+        "healthy": "Medium to Low - Heavy meal rich in carbs and fats",
+        "calories": "140 kcal / 100g",
+        "protein": "8g",
+        "carbs_g": "12g",
+        "fat_g": "7g",
+        "warning": "Contains many layers of cheese and pasta; high in calories"
+    },
+    "lobster_bisque": {
+        "healthy": "Low - Rich in cream and butter despite shellfish benefits",
+        "calories": "90 kcal / 100g",
+        "protein": "4.5g",
+        "carbs_g": "6g",
+        "fat_g": "5g",
+        "warning": "High in saturated fats and sodium; caution for heart patients"
+    },
+    "lobster_roll_sandwich": {
+        "healthy": "Medium to Low - Great seafood protein but mayo/bread raise calories",
+        "calories": "250 kcal / 100g",
+        "protein": "14g",
+        "carbs_g": "20g",
+        "fat_g": "12g",
+        "warning": "High in cholesterol and refined carbohydrates"
+    },
+    "macaroni_and_cheese": {
+        "healthy": "Low - Processed carbs and high saturated fats",
+        "calories": "164 kcal / 100g",
+        "protein": "7g",
+        "carbs_g": "20g",
+        "fat_g": "7g",
+        "warning": "Lacks fiber and causes rapid weight gain"
+    },
+    "macarons": {
+        "healthy": "Very Low - Pure sugar and almond flour",
+        "calories": "450 kcal / 100g",
+        "protein": "7g",
+        "carbs_g": "60g",
+        "fat_g": "18g",
+        "warning": "Extremely high in sugars; high risk for diabetics"
+    },
+    "miso_soup": {
+        "healthy": "High - Low calorie and good for digestion (probiotics)",
+        "calories": "40 kcal / 100g",
+        "protein": "3g",
+        "carbs_g": "5g",
+        "fat_g": "1g",
+        "warning": "Very high in sodium; unsuitable for high blood pressure patients"
+    },
+    "mussels": {
+        "healthy": "Very High - Lean protein, iron, and Omega-3",
+        "calories": "172 kcal / 100g",
+        "protein": "24g",
+        "carbs_g": "7g",
+        "fat_g": "4.5g",
+        "warning": "Alert for seafood allergies and bacterial toxins"
+    },
+    "nachos": {
+        "healthy": "Very Low - Saturated fats, salts, and empty calories",
+        "calories": "306 kcal / 100g",
+        "protein": "7g",
+        "carbs_g": "35g",
+        "fat_g": "16g",
+        "warning": "Causes inflammation and high blood pressure due to sodium/oils"
+    },
+    "omelette": {
+        "healthy": "High - Excellent source of protein and vitamins",
+        "calories": "154 kcal / 100g",
+        "protein": "11g",
+        "carbs_g": "1-2g",
+        "fat_g": "12g",
+        "warning": "Watch the amount of added butter or cheese (cholesterol)"
+    },
+    "onion_rings": {
+        "healthy": "Very Low - Fried starches in heavy oil",
+        "calories": "411 kcal / 100g",
+        "protein": "3.9g",
+        "carbs_g": "50g",
+        "fat_g": "22g",
+        "warning": "Rich in trans fats that harm the heart and arteries"
+    },
+    "oysters": {
+        "healthy": "Very High - Rich in zinc and protein; low calorie",
+        "calories": "81 kcal / 100g",
+        "protein": "9g",
+        "carbs_g": "5g",
+        "fat_g": "2.5g",
+        "warning": "May carry bacteria if eaten raw; risk for immunocompromised individuals"
+    },
+    "pad_thai": {
+        "healthy": "Medium to Low - High carbs with sugar and sodium",
+        "calories": "190 kcal / 100g",
+        "protein": "7g",
+        "carbs_g": "25g",
+        "fat_g": "7g",
+        "warning": "High in calories from sugar and oils; caution for diabetics"
+    },
+    "paella": {
+        "healthy": "Medium - Complete meal but high in carbs (rice)",
+        "calories": "156 kcal / 100g",
+        "protein": "8g",
+        "carbs_g": "20g",
+        "fat_g": "5g",
+        "warning": "High in sodium; best to reduce added salt"
+    },
+    "pancakes": {
+        "healthy": "Low - Refined carbs often eaten with sugars",
+        "calories": "227 kcal / 100g",
+        "protein": "6g",
+        "carbs_g": "35g",
+        "fat_g": "8g",
+        "warning": "Raises insulin levels quickly in the blood"
+    },
+    "panna_cotta": {
+        "healthy": "Low - Cream, sugar, and gelatin",
+        "calories": "223 kcal / 100g",
+        "protein": "3g",
+        "carbs_g": "20g",
+        "fat_g": "14g",
+        "warning": "High in saturated fats and added sugars"
+    },
+    "peking_duck": {
+        "healthy": "Medium to Low - High protein but the skin is very fatty",
+        "calories": "290 kcal / 100g",
+        "protein": "19g",
+        "carbs_g": "5g",
+        "fat_g": "22g",
+        "warning": "High in calories, fat, and salt (accompanying sauce)"
+    },
+    "pho": {
+        "healthy": "High - Nutritious soup with protein and fresh herbs",
+        "calories": "100 kcal / 100g",
+        "protein": "6g",
+        "carbs_g": "12g",
+        "fat_g": "3g",
+        "warning": "Sodium levels in the broth can be very high"
+    },
+    "pizza": {
+        "healthy": "Low to Medium - Carbs, cheeses, and fats",
+        "calories": "266 kcal / 100g",
+        "protein": "11g",
+        "carbs_g": "33g",
+        "fat_g": "10g",
+        "warning": "Rich in sodium and saturated fats; causes rapid weight gain"
+    },
+    "pork_chop": {
+        "healthy": "Medium - High protein but contains saturated fats",
+        "calories": "242 kcal / 100g",
+        "protein": "25g",
+        "carbs_g": "0g",
+        "fat_g": "15g",
+        "warning": "Religious dietary warning (pork); high in cholesterol"
+    },
+    "poutine": {
+        "healthy": "Very Low - Fried potatoes, cheese, and heavy gravy",
+        "calories": "140 kcal / 100g",
+        "protein": "4g",
+        "carbs_g": "18g",
+        "fat_g": "7g",
+        "warning": "Dangerous mix of sodium, fat, and high calories"
+    },
+    "prime_rib": {
+        "healthy": "Medium - Excellent protein but one of the fattiest cuts",
+        "calories": "300 kcal / 100g",
+        "protein": "17g",
+        "carbs_g": "0g",
+        "fat_g": "25g",
+        "warning": "Risk for heart patients due to high saturated fats"
+    },
+    "pulled_pork_sandwich": {
+        "healthy": "Low - Protein mixed with sugary sauce and white bread",
+        "calories": "230 kcal / 100g",
+        "protein": "15g",
+        "carbs_g": "20g",
+        "fat_g": "10g",
+        "warning": "Religious dietary warning (pork); high sugar calories"
+    },
+    "ramen": {
+        "healthy": "Low - Refined starches and excessive sodium",
+        "calories": "150 kcal / 100g",
+        "protein": "5g",
+        "carbs_g": "25g",
+        "fat_g": "4g",
+        "warning": "Linked to high blood pressure and heart disease due to salt"
+    },
+    "ravioli": {
+        "healthy": "Medium - Dough filled with protein or cheeses",
+        "calories": "203 kcal / 100g",
+        "protein": "8g",
+        "carbs_g": "30g",
+        "fat_g": "6g",
+        "warning": "High in carbs and calories depending on the sauce (white/red)"
+    },
+    "red_velvet_cake": {
+        "healthy": "Very Low - Sugars, fats, and artificial colors",
+        "calories": "367 kcal / 100g",
+        "protein": "4g",
+        "carbs_g": "50g",
+        "fat_g": "18g",
+        "warning": "Empty calories; causes inflammation and sugar swings"
+    },
+    "risotto": {
+        "healthy": "Medium to Low - Processed rice with butter and cheese",
+        "calories": "170 kcal / 100g",
+        "protein": "4g",
+        "carbs_g": "28g",
+        "fat_g": "6g",
+        "warning": "High in carbohydrates and saturated fats; raises blood sugar"
+    },
+    "samosa": {
+        "healthy": "Low - Deep-fried pastry with high carb and fat content",
+        "calories": "262 kcal / 100g",
+        "protein": "4.5g",
+        "carbs_g": "30g",
+        "fat_g": "14g",
+        "warning": "High in trans fats and sodium; can lead to weight gain"
+    },
+    "sashimi": {
+        "healthy": "Very High - Pure protein and healthy Omega-3 fats",
+        "calories": "127 kcal / 100g",
+        "protein": "20g",
+        "carbs_g": "0g",
+        "fat_g": "4g",
+        "warning": "Raw fish risk; avoid if pregnant or immunocompromised"
+    },
+    "scallops": {
+        "healthy": "High - Lean protein and rich in minerals like magnesium",
+        "calories": "111 kcal / 100g",
+        "protein": "20g",
+        "carbs_g": "5g",
+        "fat_g": "1g",
+        "warning": "High in cholesterol; potential shellfish allergy"
+    },
+    "seaweed_salad": {
+        "healthy": "High - Low calorie and packed with iodine and vitamins",
+        "calories": "70 kcal / 100g",
+        "protein": "1g",
+        "carbs_g": "10g",
+        "fat_g": "2g",
+        "warning": "Can be high in sodium and sugar depending on the dressing"
+    },
+    "shrimp_and_grits": {
+        "healthy": "Medium to Low - High protein but heavy on butter and cream",
+        "calories": "160 kcal / 100g",
+        "protein": "10g",
+        "carbs_g": "15g",
+        "fat_g": "8g",
+        "warning": "High in saturated fats and sodium"
+    },
+    "spaghetti_bolognese": {
+        "healthy": "Medium - Good balance of carbs and protein",
+        "calories": "150 kcal / 100g",
+        "protein": "8g",
+        "carbs_g": "18g",
+        "fat_g": "6g",
+        "warning": "High in refined carbs; watch the portion size"
+    },
+    "spaghetti_carbonara": {
+        "healthy": "Low - Extremely high in saturated fats (cheese, egg, pancetta)",
+        "calories": "220 kcal / 100g",
+        "protein": "9g",
+        "carbs_g": "25g",
+        "fat_g": "10g",
+        "warning": "Very high calorie density and sodium"
+    },
+    "spring_rolls": {
+        "healthy": "Low - Mostly fried dough with minimal nutrients",
+        "calories": "250 kcal / 100g",
+        "protein": "4g",
+        "carbs_g": "30g",
+        "fat_g": "12g",
+        "warning": "High oil absorption; promotes inflammation"
+    },
+    "steak": {
+        "healthy": "Medium - Excellent protein and iron source",
+        "calories": "271 kcal / 100g",
+        "protein": "25g",
+        "carbs_g": "0g",
+        "fat_g": "19g",
+        "warning": "High in saturated fats; linked to heart issues if eaten daily"
+    },
+    "strawberry_shortcake": {
+        "healthy": "Low - High sugar and refined flour",
+        "calories": "280 kcal / 100g",
+        "protein": "3g",
+        "carbs_g": "45g",
+        "fat_g": "10g",
+        "warning": "Causes rapid blood sugar spikes"
+    },
+    "sushi": {
+        "healthy": "High - Balanced nutrients (fish, rice, seaweed)",
+        "calories": "130 kcal / 100g",
+        "protein": "6g",
+        "carbs_g": "20g",
+        "fat_g": "3g",
+        "warning": "Watch out for 'Special Rolls' with mayo/tempura (high fat)"
+    },
+    "tacos": {
+        "healthy": "Medium - Depends on the protein and toppings",
+        "calories": "220 kcal / 100g",
+        "protein": "12g",
+        "carbs_g": "20g",
+        "fat_g": "10g",
+        "warning": "Can be high in sodium and saturated fats if using fatty meats"
+    },
+    "takoyaki": {
+        "healthy": "Low - Fried batter with heavy mayo/sauce",
+        "calories": "175 kcal / 100g",
+        "protein": "5g",
+        "carbs_g": "22g",
+        "fat_g": "8g",
+        "warning": "High in refined carbs and sodium"
+    },
+    "tiramisu": {
+        "healthy": "Low - High in sugar, fat, and caffeine",
+        "calories": "354 kcal / 100g",
+        "protein": "5g",
+        "carbs_g": "40g",
+        "fat_g": "18g",
+        "warning": "Very calorie-dense; contains raw egg and alcohol"
+    },
+    "tuna_tartare": {
+        "healthy": "High - Lean protein and healthy fats",
+        "calories": "150 kcal / 100g",
+        "protein": "22g",
+        "carbs_g": "2g",
+        "fat_g": "6g",
+        "warning": "Mercury concerns with high tuna intake; raw food risk"
+    },
+    "waffles": {
+        "healthy": "Low - Purely processed carbs and sugar",
+        "calories": "291 kcal / 100g",
+        "protein": "8g",
+        "carbs_g": "40g",
+        "fat_g": "12g",
+        "warning": "High glycemic index; typically served with high-sugar syrups"
+    }
+}
+
+
+
+    
