@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food AI Web Interface</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #222; 
+            color: white; 
+            text-align: center; 
+            margin: 0;
+            padding: 0;
+        }
+        .container { 
+            margin-top: 50px; 
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        input[type="file"] {
+            background: #333;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            color: white;
+            cursor: pointer;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        #result { 
+            margin-top: 30px; 
+            background: #333; 
+            padding: 25px; 
+            display: inline-block; 
+            border-radius: 10px; 
+            min-width: 300px;
+            text-align: left;
+            border: 1px solid #444;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .result-item {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+        .result-item b {
+            color: #aaa;
+        }
+        .food-title {
+            color: #2b752b;
+            margin-top: 0;
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .error-text {
+            color: #ff5252;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Food Nutrition Analyzer</h1>
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="uploadImage()">Analyze Food</button>
+        <br><br>
+        <div id="result">Results will appear here...</div>
+    </div>
+
+    <script>
+        async function uploadImage() {
+            const fileInput = document.getElementById('imageInput');
+            const resultDiv = document.getElementById('result');
+
+            // 1. التأكد من اختيار صورة أولاً
+            if (!fileInput.files || fileInput.files.length === 0) {
+                resultDiv.innerHTML = '<span class="error-text">⚠️ Please choose an image file first!</span>';
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('image', fileInput.files[0]);
+
+            // إظهار مؤشر تحميل للمستخدم
+            resultDiv.innerHTML = 'Analyzing food image... ⏳';
+
+            try {
+                // 2. إرسال الطلب للباك-إند
+                const response = await fetch('http://127.0.0.1:7860/predict', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    
+                    // 3. عرض البيانات بشكل منظم ومنسق
+                   // 3. عرض البيانات بشكل منظم ومنسق
+resultDiv.innerHTML = `
+    <h3 class="food-title">✅ Identified As: ${data.food_name || 'Unknown'}</h3>
+    <div class="result-item">🥗 <b>Health Grade:</b> ${data.healthy || 'N/A'}</div>
+    <div class="result-item">🔥 <b>Calories:</b> ${data.calories || 'N/A'}</div>
+    <div class="result-item">💪 <b>Protein:</b> ${data.protein || 'N/A'}</div>
+    <div class="result-item">🌾 <b>Carbohydrates:</b> ${data.carbs || 'N/A'}</div>
+    <div class="result-item">🥑 <b>Fats:</b> ${data.fat || 'N/A'}</div>
+    <div class="result-item">ℹ️ <b>Status:</b> ${data.status || 'Success'}</div>
+`;
+                } else {
+                    const errorData = await response.json();
+                    resultDiv.innerHTML = `<span class="error-text">❌ Error: ${errorData.error || 'Server error'}</span>`;
+                }
+            } catch (error) {
+                console.error("Connection error:", error);
+                // رسالة واضحة للمستخدم لو الباك-إند مش شغال
+                resultDiv.innerHTML = `
+                    <span class="error-text">❌ Connection Failed!</span><br>
+                    <small style="color: #aaa; display:block; margin-top:5px;">
+                        Make sure your Flask server (app.py) is running on port 5000.
+                    </small>
+                `;
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
